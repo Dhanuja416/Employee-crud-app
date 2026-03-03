@@ -1,0 +1,63 @@
+### Employee CRUD API Tests
+### Base URL: http://localhost:5000
+
+### 1. Health Check
+GET http://localhost:5000/
+
+###
+
+### 2. Create Employee
+POST http://localhost:5000/api/employees
+Content-Type: application/json
+
+{
+  "first_name": "John",
+  "last_name": "Doe",
+  "email": "john.doe@example.com",
+  "position": "Software Engineer",
+  "salary": 75000
+}
+
+###
+
+### 3. Create Another Employee
+POST http://localhost:5000/api/employees
+Content-Type: application/json
+
+{
+  "first_name": "Jane",
+  "last_name": "Smith",
+  "email": "jane.smith@example.com",
+  "position": "Product Manager",
+  "salary": 85000
+}
+
+###
+
+### 4. Get All Employees
+GET http://localhost:5000/api/employees
+
+###
+
+### 5. Get Single Employee (change ID as needed)
+GET http://localhost:5000/api/employees/1
+
+###
+
+### 6. Update Employee (change ID as needed)
+PUT http://localhost:5000/api/employees/1
+Content-Type: application/json
+
+{
+  "first_name": "John",
+  "last_name": "Doe",
+  "position": "Senior Software Engineer",
+  "salary": 95000
+}
+
+###
+
+### 7. Delete Employee (change ID as needed)
+DELETE http://localhost:5000/api/employees/1
+
+###
